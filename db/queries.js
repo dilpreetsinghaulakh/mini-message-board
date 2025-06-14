@@ -12,16 +12,7 @@ async function insertMessage(username, message) {
   ]);
 }
 
-// async function searchMessages(message) {
-//   const { rows } = await pool.query(
-//     "SELECT * FROM messages WHERE message ILIKE $1",
-//     [`%${message}%`]
-//   );
-//   return rows;
-// }
-
 module.exports = {
   getAllMessages,
   insertMessage,
-  // searchMessages,
 };
