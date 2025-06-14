@@ -1,11 +1,11 @@
 <div style="display: flex; flex-direction: column; gap: 0.25em; border: #dadada 1px solid; padding: 1rem;border-radius: 0.5rem;">
-  <p style="margin: 0; font-size: 1.1rem"><%= message.text %></p>
+  <p style="margin: 0; font-size: 1.1rem"><%= message.message %></p>
   <div style="display: flex; justify-content: space-between">
     <p style="margin: 0; font-size: 0.9rem; font-weight: bold; color: #565656">
-      <%= message.user %>
+      <%= message.username %>
     </p>
     <p style="margin: 0; font-size: 0.9rem; color: #565656">
-      <%= message.added.toLocaleDateString('en-US', { month: 'short', day:
+      <%= message.created_at.toLocaleDateString('en-US', { month: 'short', day:
       'numeric', year: 'numeric', }) %>
     </p>
   </div>
